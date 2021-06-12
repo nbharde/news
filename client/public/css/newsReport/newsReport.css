@@ -1,0 +1,25 @@
+.article {
+  clear: both;
+  display: flex;
+  margin: 0 0 20px 0;
+  cursor: pointer;
+}
+.article .image {
+  float: left;
+  padding: 0 20px;
+  height: 100px;
+  width: 130px;
+}
+.article .content {
+  float: left;
+  max-width: 500px;
+}
+.article .content .title {
+  font-weight: bold;
+  font-size: 16px;
+}
+.article .content .description {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=newsReport.css.map */

@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch } from "react-redux";
+
+import NewsReportsComponent from "./components/newsReports/NewsReportsComponent";
+import HeaderComponent from "./components/headers/HeaderComponent";
+import { getNewsReports } from "./actions/NewsReportsAction";
 
 const App = () => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+       dispatch(getNewsReports());
+    }, [dispatch])
+
     return (
-        <div>
-            <h1>App </h1>
-        </div>
+        <>
+            <HeaderComponent/>
+            <NewsReportsComponent/>
+        </>
     )
 }
 
