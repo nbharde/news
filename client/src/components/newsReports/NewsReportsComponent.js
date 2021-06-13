@@ -5,27 +5,20 @@ import NewsReportComponent from "../newsReport/NewsReportComponent";
 import SearchComponent from "../search/SearchComponent";
 
 const NewsReportsComponent = (props) => {
-    const newsReports = useSelector(state => state.newsReportsReducer);
-    
+    const { articles } = useSelector(state => state.newsReportsReducer);
+
     return(
         <div className="container">
-            {/* <div className="searchbox-container">
-                <form>
-                    <input type="text" className="search-box"/>
-                    <input type="submit" className="submit-btn" />
-                </form>
-            </div> */}
-            
             <SearchComponent />
 
-            { newsReports.articles && newsReports.articles.length > 0 ? (
-                <div className="content-container">
-                    {newsReports.articles.map(article => (
+            { articles && articles.length > 0 ? (
+                <div className="content-container" data-testid="articles_testId">
+                    {articles.map(article => (
                         <NewsReportComponent article={article} key={article.title}/>
                     ))}
                 </div>
             ) : 
-            <div />
+            <div data-testid="no_article_testId">No article found</div>
             }
         </div>
     );

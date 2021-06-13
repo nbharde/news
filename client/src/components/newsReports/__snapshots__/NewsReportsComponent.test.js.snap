@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NewsReportsComponent matches snapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="searchbox-container"
+      data-testid="searchbox_testId"
+    >
+      <form
+        autocomplete="off"
+        data-testid="form_testId"
+      >
+        <input
+          class="search-box"
+          data-testid="input_testId"
+          placeholder="Enter Keyword to Search"
+          type="text"
+        />
+        <button
+          alt="Search"
+          class="submit-btn"
+          data-testid="submit_btn_testId"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div
+      class="content-container"
+      data-testid="articles_testId"
+    >
+      <div
+        class="article"
+        data-testid="headline_testId"
+      >
+        <div
+          class="image"
+        >
+          <img
+            alt="News"
+            height="100"
+            width="130"
+          />
+        </div>
+        <div
+          class="content"
+        >
+          <div
+            class="title"
+          >
+            COVID-19: UK reports
+          </div>
+          <div
+            class="description"
+          >
+            Description
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

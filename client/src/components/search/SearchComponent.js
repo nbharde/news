@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useDispatch } from "react-redux";
 import { getSearchedNews } from "../../actions/NewsReportsAction";
 
-const SearchComponent = ({article}) => {
+const SearchComponent = (props) => {
     const inputRef = useRef(null);
     const dispatch = useDispatch();
 
@@ -18,19 +18,21 @@ const SearchComponent = ({article}) => {
     }
 
     return(
-        <div className="searchbox-container">
-            <form autoComplete="off" onSubmit={handleSubmit}>
+        <div className="searchbox-container" data-testid="searchbox_testId">
+            <form autoComplete="off" onSubmit={handleSubmit} data-testid="form_testId">
                 <input 
                     type="text" 
                     className="search-box"
                     ref={inputRef}
                     placeholder="Enter Keyword to Search"
+                    data-testid="input_testId"
                 />
-                <input 
+                <button  
                     type="submit" 
                     className="submit-btn"
                     alt="Search"
-                />
+                    data-testid="submit_btn_testId"
+                >Submit</button>
             </form>
         </div>
     );

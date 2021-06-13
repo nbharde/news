@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HeaderComponent matches snapshot 1`] = `
+<div>
+  <div
+    class="heading"
+    data-testid="heading_testId"
+  >
+    News Articles
+  </div>
+</div>
+`;

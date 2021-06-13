@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing SearchComponent matches snapshot 1`] = `
+<div>
+  <div
+    class="searchbox-container"
+    data-testid="searchbox_testId"
+  >
+    <form
+      autocomplete="off"
+      data-testid="form_testId"
+    >
+      <input
+        class="search-box"
+        data-testid="input_testId"
+        placeholder="Enter Keyword to Search"
+        type="text"
+      />
+      <button
+        alt="Search"
+        class="submit-btn"
+        data-testid="submit_btn_testId"
+        type="submit"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+`;

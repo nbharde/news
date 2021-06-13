@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsReportComponent matches snapshot 1`] = `
+<div>
+  <div
+    class="article"
+    data-testid="headline_testId"
+  >
+    <div
+      class="image"
+    >
+      <img
+        alt="News"
+        height="100"
+        src=""
+        width="130"
+      />
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="title"
+      >
+        COVID-19: UK reports
+      </div>
+      <div
+        class="description"
+      >
+        Description
+      </div>
+    </div>
+  </div>
+</div>
+`;
